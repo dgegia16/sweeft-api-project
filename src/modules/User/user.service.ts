@@ -39,3 +39,24 @@ export async function GetUserById(userId: string) {
   }
   return user;
 }
+
+export async function UpdateUserDetails(
+  userId: string,
+  updatedDetails: string
+) {
+  try {
+    const user = await Users.findOne({ where: { id: userId } });
+
+    if (!user) {
+      throw new Error('User not found');
+    }
+
+    Object.assign(user, updatedDetails);
+
+    await user.save();
+
+    return user;
+  } catch (error) {
+    throw new Error('Failed to update user details');
+  }
+}
