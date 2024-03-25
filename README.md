@@ -1,6 +1,6 @@
 <h1 align="center" id="title">Sweeft Node.js task</h1>
 
-<p align="center"><img src="https://www.makingscience.com/wp-content/uploads/2022/09/BRAND-TOWARDS_SWEEFT-MAIN_LOGO-1.png" alt="project-image"></p>
+
 
 <p id="description">Sweeft SaaS backend application for node.js internship</p>
 
